@@ -1,0 +1,163 @@
+package university;
+
+/**
+ * This class represents a university education system.
+ * 
+ * It manages students and courses.
+ *
+ */
+public class University {
+	private String universityName;
+	private String rector;
+	
+	public Student[] students = new Student[1000];
+	public Course[] courses = new Course[50];
+
+	public static int SCOUNT=0;
+	public static int CCOUNT=0;
+	
+	
+	/**
+	 * Constructor
+	 * @param name name of the university
+	 */
+	public University(String name){
+		//TODO: to be implemented
+		this.universityName = name;
+		
+		//students = new Student[1000];
+		//courses = new Course[50];
+	}
+	
+	/**
+	 * Getter for the name of the university
+	 * 
+	 * @return name of university
+	 */
+	public String getName(){
+		//TODO: to be implemented
+		return universityName;
+	}
+	
+	/**
+	 * Defines the rector for the university
+	 * 
+	 * @param first
+	 * @param last
+	 */
+	public void setRector(String first, String last){
+		//TODO: to be implemented
+		this.rector = first + " " + last;
+	
+	}
+	
+	/**
+	 * Retrieves the rector of the university
+	 * 
+	 * @return name of the rector
+	 */
+	public String getRector(){
+		//TODO: to be implemented
+		return rector;
+	}
+	
+	/**
+	 * Enroll a student in the university
+	 * 
+	 * @param first first name of the student
+	 * @param last last name of the student
+	 * 
+	 * @return unique ID of the newly enrolled student
+	 */
+	
+	public int enroll(String first, String last){
+		//TODO: to be implemented
+		
+		String str= first + " " + last;
+		students[SCOUNT] = new Student(str , SCOUNT);
+		SCOUNT++;
+		return students[SCOUNT-1].getId();
+	}
+	
+	/**
+	 * Retrieves the information for a given student
+	 * 
+	 * @param id the ID of the student
+	 * 
+	 * @return information about the student
+	 */
+	public String student(int id){
+		//TODO: to be implemented
+		return students[id%10000].getId() + " " + students[id%10000].getName();
+	}
+	
+	/**
+	 * Activates a new course with the given teacher
+	 * 
+	 * @param title title of the course
+	 * @param teacher name of the teacher
+	 * 
+	 * @return the unique code assigned to the course
+	 */
+	public int activate(String title, String teacher){
+		//TODO: to be implemented
+		courses[COURSE_COUNT].setCode(COURSE_COUNT+10);
+		courses[COURSE_COUNT].setName(title);
+		courses[COURSE_COUNT].setTeacherName(teacher);
+		
+		COURSE_COUNT++;
+		return courses[--COURSE_COUNT].getCode(); 
+	}
+	
+	/**
+	 * Retrieve the information for a given course.
+	 * 
+	 * The course information is formatted as a string containing 
+	 * code, title, and teacher separated by commas, 
+	 * e.g., {@code "10,Object Oriented Programming,James Gosling"}.
+	 * 
+	 * @param code unique code of the course
+	 * 
+	 * @return information about the course
+	 */
+	public String course(int code){
+		//TODO: to be implemented
+		return courses[code-10].getCode() + "," + courses[code-10].getName() + "," + courses[code-10].getTeacherName();
+	}
+	/**
+	 * Register a student to attend a course
+	 * @param studentID id of the student
+	 * @param courseCode id of the course
+	 */
+	public void register(int studentID, int courseCode){
+		//TODO: to be implemented
+		courses[courseCode-10].setAttendees(studentID);
+	}
+	
+	/**
+	 * Retrieve a list of attendees
+	 * 
+	 * @param courseCode unique id of the course
+	 * @return list of attendees separated by "\n"
+	 */
+	public String listAttendees(int courseCode){
+		//TODO: to be implemented
+		return null;
+	}
+
+	/**
+	 * Retrieves the study plan for a student.
+	 * 
+	 * The study plan is reported as a string having
+	 * one course per line (i.e. separated by '\n').
+	 * The courses are formatted as describe in method {@link #course}
+	 * 
+	 * @param studentID id of the student
+	 * 
+	 * @return the list of courses the student is registered for
+	 */
+	public String studyPlan(int studentID){
+		//TODO: to be implemented
+		return null;
+	}
+}

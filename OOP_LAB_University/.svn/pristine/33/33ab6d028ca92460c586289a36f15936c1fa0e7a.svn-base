@@ -1,0 +1,41 @@
+package university;
+
+public class Course {
+	private int code;
+	private String name;
+	private String teacherName;
+	private int attendees[];
+	private int n_attendees=0;
+	
+	public Course() {
+		attendees = new int[100];
+	}
+	public int getCode() {
+		return code;
+	}
+	public void setCode(int code) {
+		this.code = code;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+	public String getTeacherName() {
+		return teacherName;
+	}
+	public void setTeacherName(String name) {
+		this.teacherName = name;
+	}
+	public int[] getAttendees() {
+		return attendees;
+	}
+	public void setAttendees(int studentID) {
+		this.attendees[n_attendees] = studentID;
+		this.n_attendees++;
+	}
+	
+
+}

@@ -1,0 +1,34 @@
+package university;
+
+public class Student {
+	String name;
+	int id;
+	public Course[] registeredCourses;
+	public int numberOfRegisteredCourses=0;
+	
+	public Student(String name, int num){
+		this.name = name;
+		this.id = num + 10000;
+		registeredCourses = new Course[25];
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public int getId() {
+		return id;
+	}
+	//no need for seId
+/*	public void setId(int id) {
+		this.id = id;
+	}
+	*/
+	public void studentRegisterForCourse(Course CourseCode) {
+		this.registeredCourses[numberOfRegisteredCourses++] = CourseCode;
+	}
+	
+}
+
+
