@@ -1,0 +1,31 @@
+import java.util.LinkedList;
+import java.util.Queue;
+
+public class TestApp {
+
+	
+	static final long ELEMENTS= 100000;
+	
+	public static void main(String[] args) {
+		TestApp ta = new TestApp();
+		ta.queue();
+	}
+	
+	
+	void queue() {
+		Queue<String> beatles;
+		
+		beatles = new LinkedList<>();
+		beatles.add("john");
+		beatles.add("Ringo");
+		beatles.add("Paul");
+		beatles.add("George");
+		
+		while(!beatles.isEmpty()) {
+			System.out.println(beatles.poll());
+		}
+		System.out.println("--------");
+		System.out.println(beatles.poll());
+			
+	}
+}

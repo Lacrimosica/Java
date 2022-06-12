@@ -1,0 +1,14 @@
+
+public class X extends Thread {
+	
+	public X(String x, int xx) {
+		for(int i= xx ; i>0 ; i--) {
+			System.out.println(x + " : " + xx);
+		}
+	}
+	public void run() {
+		System.out.println("hello world X");
+	}
+	
+
+}

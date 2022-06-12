@@ -1,0 +1,51 @@
+package university;
+
+public class Student {
+	String name;
+	int id;
+	public String[] courses;
+	public int courseCount=0;	
+	
+	public Student(String name, int id){
+		this.name = name;
+		this.id = id;
+		courses = new String[25];
+	}
+	
+	public String getName() {
+		return this.name;
+	}
+	
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+	public int getId() {
+		return this.id;
+	}
+	
+	public String toString() {
+		return this.id + " " + this.name;
+	}
+	
+	public void addCourse(Course course) {
+		if(courseCount<25) {
+			this.courses[courseCount] = course.toString();
+			courseCount++;
+		}else {
+		System.out.println("this student can't take more courses");
+		}
+	}
+	
+	public String studyPlan() {	
+		String str= " ";
+		for(int i=0; i<this.courseCount; i++ ) {
+			str+= courses[i];
+			str+="\n";
+		}
+		return str;
+	}
+	
+}
+
+

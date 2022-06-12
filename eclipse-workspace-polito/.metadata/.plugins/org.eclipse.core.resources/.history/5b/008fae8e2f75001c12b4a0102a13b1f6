@@ -1,0 +1,14 @@
+package it.polito.oop;
+
+public class Coffee {
+	
+	private String type;
+	private double intensity;
+	
+	
+	public Coffee(String type) {
+		this.type = type;
+		
+	}
+
+}

@@ -1,0 +1,9 @@
+package it.polito.oop.directors;
+
+public final class Staff {
+
+	private instance;
+	private staff() {
+		
+	}
+}

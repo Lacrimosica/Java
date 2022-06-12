@@ -1,0 +1,52 @@
+package university;
+
+public class Course {
+	private int code;
+	private String name;
+	private String teacherName;
+	private String[] students;
+	private int studentCount=0;
+	
+	public Course(String title, int code, String tname) {
+		this.name = title;
+		this.code = code;
+		this.teacherName = tname;
+		students = new String[100];
+	}
+	public int getCode() {
+		return code;
+	}
+	
+	public String getName() {
+		return this.name;
+	}
+	
+	public String getTeacherName() {
+		return this.teacherName;
+	}
+	
+	public String toString() {
+		return this.code + "," + this.name + "," + this.teacherName;
+	}
+	
+	
+	public void addStudent(Student student) {
+		if(studentCount <100) {
+			this.students[studentCount] = student.toString();
+			studentCount++;
+		}else {
+			System.out.println("course is full \n");
+		}
+	}
+	
+	public String listAttendees() {
+		String str= " ";
+		for(int i=0; i<this.studentCount; i++ ) {
+			str+= students[i];
+			str+="\n";
+		}
+		return str;
+	}
+	
+	
+}

@@ -1,0 +1,32 @@
+package primeNumber;
+
+import java.util.OptionalInt;
+import java.util.stream.IntStream;
+
+public class Prime {
+
+	public static void main(String[] args) {
+		System.out.println(isPrime(4684153753));
+		
+	}
+	
+	
+	public static boolean isPrime(int num) {
+		if(num <= 1) return false;
+		OptionalInt f = 
+				IntStream.iterate(2, i -> i+1).takeWhile(i -> i<= num/2)
+				.filter(i -> num % i ==0)
+				.findFirst();
+		if(f.isEmpty()) return true;
+//				.forEach(System.out::println);
+	return false;
+	}
+	
+	
+	public static boolean isPrimev2(int num) {
+		if(num <= 1) return false;
+		Op
+		
+	}
+
+}

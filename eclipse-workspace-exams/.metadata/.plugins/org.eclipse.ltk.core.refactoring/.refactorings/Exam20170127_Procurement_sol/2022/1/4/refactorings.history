@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;testProcurement.jar&apos; to &apos;Exam20170127_Procurement/src&apos;&#x0A;- Original project: &apos;Exam20170127_Procurement_sol&apos;&#x0A;- Destination element: &apos;Exam20170127_Procurement/src&apos;&#x0A;- Original element: &apos;testProcurement.jar&apos;&#x0A;- Update references to refactored element" description="Move file" destination="=Exam20170127_Procurement/src" element1="testProcurement.jar" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1642608021969" units="0" version="1.0"/>
+</session>

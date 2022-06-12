@@ -1,0 +1,46 @@
+import java.util.stream.IntStream;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		//making thread : Extending thread class
+		//class already made
+		Thread t = new X("xxx" , 10);
+	
+		
+		
+		//making thread : implementing Runnable
+		
+		Thread r = new Thread(new Y("yyy" , 10));
+		r.start();
+		t.start();
+		
+		
+		
+		//Runnable factory
+		
+		Thread t1,t2;
+		
+		t1= new Thread(counting("x", 10));
+		t2= new Thread(counting("y", 10));
+		
+		t1.start();
+		t2.start();
+
+	}
+	
+	//Runnable factory
+	static Runnable counting(String l , int num) {
+		return () -> IntStream.range(0, num)
+				.mapToObj(i -> l +": " + i+ " ")
+				.forEach(System.out::println);
+	}
+
+	
+	
+	
+	
+	//making threads 1
+
+}

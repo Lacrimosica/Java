@@ -1,0 +1,11 @@
+
+public class Y implements Runnable {
+
+	@Override
+	public void run() {
+		System.out.println("hello world Y");
+		
+	}
+	
+
+}

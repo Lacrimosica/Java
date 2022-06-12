@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename field &apos;members&apos; in &apos;it.polito.oop.milliways.Party&apos; to &apos;companions&apos;&#x0A;- Original project: &apos;Exam20180126_Milliways&apos;&#x0A;- Original element: &apos;it.polito.oop.milliways.Party.members&apos;&#x0A;- Renamed element: &apos;it.polito.oop.milliways.Party.companions&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" delegate="false" deprecate="false" description="Rename field &apos;members&apos;" flags="589826" getter="false" id="org.eclipse.jdt.ui.rename.field" input="/src&lt;it.polito.oop.milliways{Party.java[Party^members" name="companions" references="true" setter="false" stamp="1642515033928" textual="false" version="1.0"/>
+</session>

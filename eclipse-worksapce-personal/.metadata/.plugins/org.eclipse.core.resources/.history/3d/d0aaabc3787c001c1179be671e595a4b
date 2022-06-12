@@ -1,0 +1,38 @@
+import java.awt.LayoutManager;
+import java.rmi.activation.ActivationGroupID;
+
+import javax.swing.BorderFactory;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.SpringLayout;
+
+public class GUI {
+
+	
+	public GUI() {
+		JFrame frame = new JFrame();
+		JPanel panel = new JPanel();
+		
+		JButton button = new JButton("click me");
+		button.addActionListener(this);
+		JLabel label = new JLabel("Number of clicks: 0");
+		
+		
+		panel.setBorder(BorderFactory.createEmptyBorder(30,30,10,30));
+		panel.setLayout(new SpringLayout());
+		
+		frame.add(panel);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.setTitle("Our GUI");
+		frame.pack();
+		frame.setVisible(true);
+		
+	}
+	
+	public static void main(String[] args) {
+		new GUI();
+	}
+
+}

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="university.Student"/>
+    <fullyQualifiedTypeName name="javax.swing.text.ElementIterator"/>
+    <fullyQualifiedTypeName name="javax.lang.model.util.Elements"/>
+    <fullyQualifiedTypeName name="hydraulic.HSystemExt"/>
+    <fullyQualifiedTypeName name="hydraulic.SimulationObserver"/>
+    <fullyQualifiedTypeName name="javax.swing.text.html.HTMLDocument.Iterator"/>
+    <fullyQualifiedTypeName name="java.util.Iterator"/>
+    <fullyQualifiedTypeName name="java.util.Collection"/>
+    <fullyQualifiedTypeName name="diet.RawMaterial"/>
+    <fullyQualifiedTypeName name="java.util.function.BiFunction"/>
+    <fullyQualifiedTypeName name="diet.NutritionalElement"/>
+    <fullyQualifiedTypeName name="diet.Restaurant"/>
+    <fullyQualifiedTypeName name="diet.Restaurant.Time"/>
+    <fullyQualifiedTypeName name="diet.Order.OrderStatus"/>
+    <fullyQualifiedTypeName name="diet.Order.PaymentMethod"/>
+    <fullyQualifiedTypeName name="java.util.LinkedList"/>
+    <fullyQualifiedTypeName name="java.util.Collections"/>
+    <fullyQualifiedTypeName name="diet.WorkingHours"/>
+    <fullyQualifiedTypeName name="java.util.SortedMap"/>
+    <fullyQualifiedTypeName name="diet.Order"/>
+    <fullyQualifiedTypeName name="mountainhuts.AltitudeRange"/>
+    <fullyQualifiedTypeName name="javax.swing.text.html.MinimalHTMLWriter"/>
+    <fullyQualifiedTypeName name="mountainhuts.MountainHut"/>
+    <fullyQualifiedTypeName name="mountainhuts.Municipality"/>
+    <fullyQualifiedTypeName name="java.util.HashMap"/>
+    <fullyQualifiedTypeName name="clinic.NoSuchDoctor"/>
+    <fullyQualifiedTypeName name="clinic.NoSuchPatient"/>
+    <fullyQualifiedTypeName name="java.util.Comparator"/>
+    <fullyQualifiedTypeName name="java.util.Map"/>
+    <fullyQualifiedTypeName name="java.util.LinkedHashMap"/>
+    <fullyQualifiedTypeName name="java.time.temporal.ChronoUnit"/>
+    <fullyQualifiedTypeName name="java.util.stream.Stream"/>
+    <fullyQualifiedTypeName name="java.util.function.Function"/>
+    <fullyQualifiedTypeName name="java.util.stream.Collector"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.TreeMap"/>
+    <fullyQualifiedTypeName name="java.util.SortedSet"/>
+    <fullyQualifiedTypeName name="java.util.Set"/>
+    <fullyQualifiedTypeName name="java.util.TreeSet"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="libraryMgmt.LMException"/>
+    <fullyQualifiedTypeName name="java.util.Map.Entry"/>
+    <fullyQualifiedTypeName name="libraryMgmt.Directory"/>
+    <fullyQualifiedTypeName name="org.junit.After"/>
+</qualifiedTypeNameHistroy>

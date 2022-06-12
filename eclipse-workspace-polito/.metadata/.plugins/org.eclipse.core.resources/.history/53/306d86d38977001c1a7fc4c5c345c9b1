@@ -1,0 +1,12 @@
+
+public class X extends Thread {
+	
+	public T() {
+		
+	}
+	public void run() {
+		System.out.println("hello world X");
+	}
+	
+
+}

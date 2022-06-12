@@ -1,0 +1,8 @@
+INDEX VERSION 1.131+/home/phos/eclipse-workspace-labs-svn/.metadata/.plugins/org.eclipse.jdt.core
+1865797976.index
+994129350.index
+4039989781.index
+538246529.index
+646308851.index
+1619105931.index
+332691990.index

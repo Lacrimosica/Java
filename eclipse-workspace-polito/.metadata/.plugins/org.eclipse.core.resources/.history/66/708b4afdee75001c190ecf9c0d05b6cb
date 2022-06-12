@@ -1,0 +1,46 @@
+import java.io.BufferedInputStream;
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.Reader;
+import java.net.URL;
+
+public final class Main {
+	
+	public static void main(String[] args) throws IOException {
+		
+		
+		FileReader r = new FileReader("src/data");
+			//reading a url
+		URL page = new URL("https://www.google.com/");
+		
+		InputStreamReader in = new InputStreamReader(page.openStream());
+		BufferedInputStream br = new BufferedInputStream(in);
+		
+		String line;
+		
+		while( (line = br.readLine() ) != null) {
+			System.out.println();
+		}
+		}
+	
+	
+	String readLine(Reader r) throws IOException {
+		char ch = (char) r.read();;
+		StringBuffer res = new StringBuffer();
+		
+		
+		while( ch != -1) {
+			if( ch == '\n') break;
+			if( ch !='\r') res.append(ch);
+			ch = (char) r.read();
+	}
+		
+		return res.toString();
+		
+		
+	}
+}
+ 

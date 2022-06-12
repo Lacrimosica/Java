@@ -1,0 +1,76 @@
+package libraryMgmt;
+
+import java.util.LinkedHashMap;
+import java.util.Map;
+
+public class User {
+
+	private String name;
+	private int maxBooks;
+	private int maxdays;
+	private int numBooks;
+	private Map<String, Loan> loans;
+	
+
+	public User(String name, int maxBooks, int maxdays) {
+		this.name = name;
+		this.maxBooks = maxBooks;
+		this.maxdays = maxdays;
+		this.numBooks = 0;
+		loans = new LinkedHashMap<>();
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public int getMaxBooks() {
+		return maxBooks;
+	}
+
+
+	public int getMaxdays() {
+		return maxdays;
+	}
+	
+	public void loan(Loan l) {
+		numBooks ++;
+		loans.put(l.getTitle(), l);
+	}
+
+	
+	public boolean canLoan() {
+		boolean maxed = true;
+		boolean notLate = true;
+		if(numBooks < maxBooks) {
+			maxed = false;
+		}
+		
+		for(Loan l : loans.values()) {
+			if(l.isLate()) {
+				notLate = false;
+			}
+		}
+		
+		return !maxed && notLate;
+	}
+
+
+	
+	public int getNumBooks() {
+		return numBooks;
+	}
+
+	public void setNumBooks(int numBooks) {
+		this.numBooks = numBooks;
+	}
+
+	public void close() {
+		numBooks--;
+		
+	}
+	@Override
+	public String toString() {
+		return name + ":" + maxBooks + ":" + maxdays;
+	}
+}

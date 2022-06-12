@@ -1,0 +1,185 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Requirements</title>
+<style type="text/css">
+<!--
+body {
+	margin: 0.5cm;
+	/*
+	font-size: 13px;
+	*/
+	}
+p   {
+    margin-top: 0.1em;
+    margin-bottom: 0.5em;
+    }
+b   {
+	font-family: monospace;
+	color: MidnightBlue;
+	background: #f8f8f8;
+	border-radius: 2pt;
+	padding: 1pt;
+/*
+    font-size=85%;
+	border: 1pt dotted silver;
+*/
+	}
+	
+i   {
+	color: Navy;
+	font-family: monospace;
+	}
+	
+h1  {
+	font-family: sans-serif;
+	text-align: center;
+    line-height: 1.1em;
+	}
+	
+h2  {
+	color: RoyalBlue;
+	font-family: sans-serif;
+	border-top: 1px dotted gray;
+	}
+@media print {
+body {
+	font-size: 10pt;
+	}
+
+  h2 {
+  	float:left;
+    margin-top: 0;
+    padding: 5px 15px 5px 0px;
+    line-height: 0.8em;
+  	}
+}
+table {
+	float: right;
+	margin: 20px;
+	border-collapse:collapse;
+	border-bottom: 1px solid Navy;
+	border-top: 1px solid Navy;
+	}
+td, th  {
+	padding: 1px 5px 1px 5px;
+	}
+tr:nth-child(even) {
+    background-color: PowderBlue;
+    margin: 1pt solid PowderBlue;
+}
+-->
+</style>
+</head>
+<body>
+<h1>Trail Running Competition Management</h1>
+<p>
+Develop the core of an application to manage a trail running competition
+The program classes are in the <b>trail</b> package and a sample main is in the <b>main</b> package.
+The fa&ccedil;ade class of the program is <b>Trail</b>. 
+<p>
+You can access a copy of the <a href="http://softeng.polito.it/courses/docs/api/index.html" target="api">JDK documentation</a> 
+on a local server.
+</p>
+
+<h2>R1. Runners</h2>
+<p>
+The participants can register to the competition through the method <b>newRunner()</b> that accepts name and surname,
+and returns the bib number. The numbers are assigner progressively starting from 1.
+<br>
+It is possible to access a runner's information by means of <b>getRunner()</b> that is provided in two
+distinct versions; the first one accepts the bib number and returns a <b>Runner</b> object;
+the second one accepts a surname and returns a collection of runners (all those sharing the
+given surname, sorted by ascending bib number). 
+<br>
+The full list of participants, sorted by bib number, is available through method <b>getRunners()</b>.
+While the list sorted alphabetically is available through method <b>getRunnersByName()</b>,
+in case of homonyms the runner with the smalles bid number comes first.
+<p>
+The class <i>Runner</i> allows accessing the information about the runner - bib number, name, surname -
+through the relative getter methods. 
+<p>
+
+
+<h2>R2. Path</h2>
+<p>
+The competition path is defined as a series of check location.
+<br>
+The locations are defined using method <b>addLocation()</b> that accepts as argument the
+unique name of the location.
+<br>
+Locations must be added in order, starting from the first -- corresponding to the departure -- up to
+the latest -- corresponding to the arrival --.
+<p>
+It is possible to access the information about a location using method <b>getLocation()</b>
+that accepts a name and returns a <b>Location</b> object.
+The full path can be accessed through method <b>getPath()</b> that returns 
+the sorted list of locations. 
+<br>
+Class <i>Location</i> provides the getter methods to retrieve the name and the order number
+of the location (starting at 0).
+
+
+<h2>R3. Delegates</h2>
+<p>
+The trail path is checked by several competition organizing committee delegates. 
+<br>
+The delegates are registered using <b>newDelegate()</b> that receives as arguments
+name, surname, and SSN id of the person.
+<br>
+The <b>getDelegates</b> returns the list of delegates (in the form <i>"Surname, Name, SSN"</i>)
+sorted alphabetically.
+<br>
+The delegates can be assigned to locations along the path using <b>assignDelegate()</b>
+that accepts the name of the location and the SSN id. It is possible for a location to
+have several assigned delegates, and for a delegate to be assigned to different locations.
+
+In case of wrong SSN id or position name the method throws a <b>TrailException</b>.
+<p>
+Given a location, it is possible to access the assigned delegates using <b>getDelegates()</b>
+that accepts the name of the location and returns a list of delegates (with the above format)
+sorted alphabetically.
+
+
+<h2>R4. Controls</h2>
+<p>
+The delegates' task is to record the passage of a runner at a specific location.
+<br>
+The recording is performed using <b>recordPassage()</b> that accepts as arguments
+the SSN id of the delegate, the name of the location, and the bib number of the runner.
+<br>
+The method must check the existence of delegate, location, and bib number; in case of
+error it throws a <i>TrailException</i>.
+In case of success the system stores as time of passage the current system time 
+(retrieved using <i>System.currentTimeMillis()</i>) and returns the same time.
+<p>
+For each runner, the passage time can be obtained using <b>getPassTime()</b> that accepts the
+name of the position and the bib number, and returns the time of passage, or -1 in case
+no passage had been recorded yet by the runner at the location.<br>
+It the name of the position or the bib number are not correct a <i>TrailException</i> is thrown.
+
+
+<h2>R5. Statistics</h2>
+<p>
+The method <b>getRanking()</b> can be used to retrieve the order of passage at a specific location,
+it accepts the name of the location and returns a list of runners, sorted by ascending
+passage time, first the runner who passed first at the location.
+<p>
+The full ranking can be retrieved using the <b>getRanking()</b> with no arguments; the ranking
+is built taking into account the most advanced locations the runners have reached and the relative
+passage times. 
+<table>
+<tr><th>Bib<th>Latest location<th>Time
+<tr><td>1<td>La Thuile<td>14:20
+<tr><td>2<td>Valgrisanche<td>19:10
+<tr><td>3<td>La Thuile<td>14:10
+<tr><td>4<td>Courmayeur<td>10:05
+</table>
+<p>
+For instance if the trail path is consists of three locations (Courmayeur, La Thuile, and Valgrisanche)  in that order,
+and the passage times are those reported in the table,
+the raking would be 2, 3, 1, 4.
+
+<hr style="width: 100%; height: 2px;"><br>
+</body>
+</html>

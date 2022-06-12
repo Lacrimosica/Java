@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename field &apos;periods&apos; in &apos;diet.Restaurant&apos; to &apos;workingHours&apos;&#x0A;- Original project: &apos;OOP_LAB_DietExtended&apos;&#x0A;- Original element: &apos;diet.Restaurant.periods&apos;&#x0A;- Renamed element: &apos;diet.Restaurant.workingHours&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" delegate="false" deprecate="false" description="Rename field &apos;periods&apos;" flags="589830" getter="false" id="org.eclipse.jdt.ui.rename.field" input="/src&lt;diet{Restaurant.java[Restaurant^periods" name="workingHours" references="true" setter="false" stamp="1641654897435" textual="false" version="1.0"/>
+</session>

@@ -1,0 +1,79 @@
+package libraryMgmt;
+
+import java.time.LocalDate;
+
+
+
+public class Loan {
+	private User user;
+	private Book book;
+	private int id;
+	private int volIndex;
+	private String title;
+	private LocalDate startDate;
+	private LocalDate dueDate;
+	private LocalDate returnDate;
+	private boolean isLate;
+	private State state;
+	
+	public enum State{
+		ONGOING, OVERDUE
+	}
+	
+	public Loan(int id, LocalDate startDate, User u , Book b, int volIndex) {
+		this.user = u;
+		this.book = b;
+		b.loan(volIndex);
+		u.loan(this);
+		this.id = id;
+		this.startDate = startDate;
+		this.dueDate = startDate.plusDays(u.getMaxdays());
+		this.dueDate = null;
+		this.isLate = false;
+		this.title = b.getTitle();
+		this.state = State.ONGOING;
+		
+	}
+	public int getId() {
+		return id;
+	}
+
+	public int getVolIndex() {
+		return volIndex;
+	}
+
+	public String getTitle() {
+		return title;
+	}
+
+	public LocalDate getStartDate() {
+		return startDate;
+	}
+
+	public LocalDate getDueDate() {
+		return dueDate;
+	}
+
+	public LocalDate getReturnDate() {
+		return returnDate;
+	}
+
+	public boolean isLate() {
+		return isLate;
+	}
+	
+	
+	public void closeLoan(LocalDate returnDate) {
+		this.returnDate = returnDate;
+		this.user.close();
+		this.book.close(this.volIndex);
+		
+	}
+	@Override
+	public String toString() {
+		
+		return this.user.getName() +":" + this.getId() + ":" +  this.dueDate + ":" +  this.state; 
+	}
+	
+
+}

@@ -1,0 +1,72 @@
+import java.util.concurrent.Callable;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
+import java.util.stream.IntStream;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		//making thread : Extending thread class
+		//class already made
+		Thread t = new X("xxx" , 10);
+	
+		
+		
+		//making thread : implementing Runnable
+		
+		Thread r = new Thread(new Y("yyy" , 10));
+//		r.start();
+//		t.start();
+		
+		
+		
+		//Runnable factory
+		
+		Thread t1,t2;
+		
+		t1= new Thread(counting("x", 10));	//passing the runnable function to
+		t2= new Thread(counting("y", 10));	//thread constructor
+		
+//		t1.start();
+//		t2.start();
+		
+		ExecutorService es = Executors.newFixedThreadPool(4);
+		es.submit(t);
+		es.submit(r);
+		es.submit(t1);
+		es.submit(t2);
+		
+		//also
+		
+		ExecutorService es2 = Executors.newCachedThreadPool();
+		es.submit(counting("z", 20));
+
+		
+		//executor with future : using callable
+		
+		Callable<Integer> waitAndReturnSomething =
+				() -> { Thread.sleep(2000);
+				return 42;
+				};
+				
+				
+		Future<Integer> answer = es2.submit(waitAndReturnSomething);
+		try {
+			Integer theAnswer = answer.get();
+			System.out.println("Answer is " + theAnswer);
+		} catch(Exception e) {
+			e.printStackTrace();
+		}
+		
+	}
+	
+	//Runnable factory
+	static Runnable counting(String l , int num) {
+		return () -> IntStream.range(0, num)
+				.mapToObj(i -> l +": " + i+ " ")
+				.forEach(System.out::println);
+	}
+	
+}

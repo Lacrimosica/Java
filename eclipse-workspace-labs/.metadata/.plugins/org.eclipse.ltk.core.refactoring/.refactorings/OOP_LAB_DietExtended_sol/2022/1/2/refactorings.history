@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;WorkingHours.java&apos; to &apos;OOP_LAB_DietExtended/src/diet&apos;&#x0A;- Original project: &apos;OOP_LAB_DietExtended_sol&apos;&#x0A;- Destination element: &apos;OOP_LAB_DietExtended/src/diet&apos;&#x0A;- Original element: &apos;diet.WorkingHours.java&apos;" description="Copy compilation unit" destination="=OOP_LAB_DietExtended/src&lt;diet" element1="/src&lt;diet{WorkingHours.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1641656245087" units="1" version="1.0"/>
+</session>

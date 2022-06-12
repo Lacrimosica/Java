@@ -1,0 +1,17 @@
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.Reader;
+
+public final class Main {
+	
+	public static void main(String[] args) throws IOException {
+		
+		FileReader r = new FileReader("src/data");
+		StringBuffer res = new StringBuffer();
+		int ch = r.read();
+		char rune = (char) (ch);
+		System.out.println(rune);
+	}
+}
+ 

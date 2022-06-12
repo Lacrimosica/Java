@@ -1,0 +1,10 @@
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="it.polito.oop.vaccination.AgeInterval"><rhs name\="it.polito.oop.vaccination.AgeInterval"/></lhs><lhs name\="java.lang.Enum"><rhs name\="delivery.Order$scheduleState"/><rhs name\="managingProperties.Request$State"/><rhs name\="delivery.Delivery$OrderStatus"/></lhs><lhs name\="delivery.Order$scheduleState"><rhs name\="delivery.Order$scheduleState"/></lhs><lhs name\="java.lang.Exception"><rhs name\="ticketing.TicketException"/></lhs><lhs name\="java.lang.Throwable"><rhs name\="ticketing.TicketException"/></lhs><lhs name\="ticketing.TicketException"><rhs name\="ticketing.TicketException"/></lhs><lhs name\="managingProperties.Request$State"><rhs name\="managingProperties.Request$State"/></lhs><lhs name\="warehouse.Product"><rhs name\="warehouse.Product"/></lhs><lhs name\="warehouse.Supplier"><rhs name\="warehouse.Supplier"/></lhs><lhs name\="delivery.Customer"><rhs name\="delivery.Customer"/></lhs><lhs name\="delivery.Food"><rhs name\="delivery.Food"/></lhs><lhs name\="delivery.Delivery$OrderStatus"><rhs name\="delivery.Delivery$OrderStatus"/></lhs><lhs name\="java.util.Collection"><rhs name\="java.util.ArrayList"/><rhs name\="java.util.TreeSet"/></lhs><lhs name\="java.lang.Iterable"><rhs name\="java.util.ArrayList"/><rhs name\="java.util.TreeSet"/></lhs><lhs name\="java.util.List"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="discounts.Product"><rhs name\="discounts.Product"/></lhs><lhs name\="java.util.Map"><rhs name\="java.util.HashMap"/></lhs><lhs name\="java.util.Set"><rhs name\="java.util.TreeSet"/></lhs></history>
+content_assist_number_of_computers=12
+eclipse.preferences.version=1
+org.eclipse.jdt.internal.ui.navigator.layout=2
+org.eclipse.jdt.internal.ui.navigator.librariesnode=true
+org.eclipse.jdt.ui.formatterprofiles.version=21
+spelling_locale_initialized=true
+typefilter_migrated=true
+useAnnotationsPrefPage=true
+useQuickDiffPrefPage=true

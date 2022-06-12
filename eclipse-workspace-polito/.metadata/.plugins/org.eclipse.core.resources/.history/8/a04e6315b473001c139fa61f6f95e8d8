@@ -1,0 +1,5 @@
+package it.polito.oop.directors;
+
+public class MovieException extends Exception{
+
+}

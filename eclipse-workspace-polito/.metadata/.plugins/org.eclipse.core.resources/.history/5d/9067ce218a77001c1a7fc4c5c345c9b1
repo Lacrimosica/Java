@@ -1,0 +1,19 @@
+
+public class Y implements Runnable {
+	String name;
+	int number;
+	
+	public Y(String x, int xx) {
+		
+		}
+	}
+	@Override
+	public void run() {
+		System.out.println("hello world Y");
+		for(int i= xx ; i>0 ; i--) {
+			System.out.println(x + " : " + i);
+		}
+	}
+	
+
+}

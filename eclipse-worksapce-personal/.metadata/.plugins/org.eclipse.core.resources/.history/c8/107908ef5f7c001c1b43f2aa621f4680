@@ -1,0 +1,24 @@
+package primeNumber;
+
+import java.util.OptionalInt;
+import java.util.stream.IntStream;
+
+public class Main {
+
+	public static void main(String[] args) {
+		System.out.println(isPrime(17));
+		
+	}
+	
+	
+	public static boolean isPrime(int num) {
+		if(num <= 1) return false;
+//		OptionalInt f = 
+				IntStream.iterate(2, i -> i+1).limit(10).takeWhile(i -> i<= num).filter(i -> num % i ==0)
+//				.findFirst();
+//		if(f.getAsInt() == num) return true;
+				.forEach(System.out::printlno);
+	return false;
+	}
+
+}

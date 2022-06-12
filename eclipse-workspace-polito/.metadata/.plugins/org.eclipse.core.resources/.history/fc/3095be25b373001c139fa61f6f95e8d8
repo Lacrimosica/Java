@@ -1,0 +1,11 @@
+package it.polito.oop.directors;
+
+public final class Staff {
+	
+	private set<Director> directors;
+	private Staff instance;
+	private staff() {
+		directors = new HashSet<>();
+		
+	}
+}

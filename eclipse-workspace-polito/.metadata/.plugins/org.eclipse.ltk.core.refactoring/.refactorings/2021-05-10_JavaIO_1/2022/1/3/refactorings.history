@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;it.polito.oop&apos; to &apos;Java_IO/src&apos;&#x0A;- Original project: &apos;2021-05-10_JavaIO_1&apos;&#x0A;- Destination element: &apos;Java_IO/src&apos;&#x0A;- Original element: &apos;2021-05-10_JavaIO_1/src/it.polito.oop&apos;" description="Copy package" destination="=Java_IO/src" element1="/src&lt;it.polito.oop" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1642243953652" version="1.0"/>
+</session>

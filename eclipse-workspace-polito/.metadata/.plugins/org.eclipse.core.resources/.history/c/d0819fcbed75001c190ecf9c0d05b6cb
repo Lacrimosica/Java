@@ -1,0 +1,29 @@
+import java.io.BufferedInputStream;
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.Reader;
+import java.net.URL;
+
+public final class Main {
+	
+	public static void main(String[] args) throws IOException {
+		
+		
+			//reading a url
+		URL page = new URL("https://www.google.com/");
+		
+		InputStreamReader in = new InputStreamReader(page.openStream());
+		BufferedReader br = new BufferedReader(in);
+		
+		String line;
+		
+		while( (line = br.readLine() ) != null) {
+			System.out.println(line);
+		}
+		}
+	}
+}
+ 

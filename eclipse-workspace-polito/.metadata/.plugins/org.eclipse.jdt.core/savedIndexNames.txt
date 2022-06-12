@@ -1,0 +1,7 @@
+INDEX VERSION 1.131+/home/phos/eclipse-workspace-polito/.metadata/.plugins/org.eclipse.jdt.core
+2703764830.index
+4071782106.index
+2046708303.index
+2206860415.index
+1473140863.index
+1865797976.index

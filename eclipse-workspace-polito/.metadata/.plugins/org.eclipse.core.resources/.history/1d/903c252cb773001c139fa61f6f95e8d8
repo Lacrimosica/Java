@@ -1,0 +1,25 @@
+
+import it.polito.oop.directors.*;
+
+public class Main {
+
+	public static void main(String[] args) throws MovieException {
+		
+		Staff.getInstance().addDirector(null);
+		Staff.getInstance().addDirector(new Director("Stanley Kubrick"));
+		Staff.getInstance().addDirector(new Director("Sergio Leone"));
+//		Staff.getInstance().addDirector(new Director("Stanley Kubrick"));
+	
+	
+	
+		public void ItalianDirectors() throws MovieException{
+			Staff staff = Staff.getInstance();
+			
+			Staff.getInstance().addDirector(new Director("Sergio Leone"));
+		}
+		
+		
+	}
+
+}
+ 

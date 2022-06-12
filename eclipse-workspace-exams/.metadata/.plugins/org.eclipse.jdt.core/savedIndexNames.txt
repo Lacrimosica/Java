@@ -1,0 +1,8 @@
+INDEX VERSION 1.131+/home/phos/eclipse-workspace-exams/.metadata/.plugins/org.eclipse.jdt.core
+4283831159.index
+2074262677.index
+538246529.index
+3116715941.index
+1865797976.index
+3569847494.index
+1203717907.index

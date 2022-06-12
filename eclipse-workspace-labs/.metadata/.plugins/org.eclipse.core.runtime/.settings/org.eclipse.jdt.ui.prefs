@@ -1,0 +1,10 @@
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="diet.Restaurant"><rhs name\="diet.Restaurant"/></lhs><lhs name\="java.lang.Enum"><rhs name\="diet.Order$OrderStatus"/><rhs name\="diet.Order$PaymentMethod"/></lhs><lhs name\="diet.Order$OrderStatus"><rhs name\="diet.Order$OrderStatus"/></lhs><lhs name\="diet.Order$PaymentMethod"><rhs name\="diet.Order$PaymentMethod"/></lhs><lhs name\="mountainhuts.AltitudeRange"><rhs name\="mountainhuts.AltitudeRange"/></lhs><lhs name\="mountainhuts.Municipality"><rhs name\="mountainhuts.Municipality"/></lhs><lhs name\="mountainhuts.MountainHut"><rhs name\="mountainhuts.MountainHut"/></lhs><lhs name\="java.time.temporal.TemporalUnit"><rhs name\="java.time.temporal.ChronoUnit"/></lhs><lhs name\="java.util.Collection"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.lang.Iterable"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.util.List"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.util.NavigableMap"><rhs name\="java.util.TreeMap"/></lhs><lhs name\="java.util.SortedMap"><rhs name\="java.util.TreeMap"/></lhs><lhs name\="java.util.Map"><rhs name\="java.util.TreeMap"/></lhs><lhs name\="java.lang.Cloneable"><rhs name\="java.util.TreeMap"/></lhs><lhs name\="java.util.AbstractMap"><rhs name\="java.util.TreeMap"/></lhs><lhs name\="java.util.TreeMap"><rhs name\="java.util.TreeMap"/></lhs><lhs name\="java.lang.Exception"><rhs name\="libraryMgmt.LMException"/></lhs><lhs name\="java.lang.Throwable"><rhs name\="libraryMgmt.LMException"/></lhs><lhs name\="libraryMgmt.LMException"><rhs name\="libraryMgmt.LMException"/></lhs></history>
+content_assist_number_of_computers=12
+eclipse.preferences.version=1
+org.eclipse.jdt.internal.ui.navigator.layout=2
+org.eclipse.jdt.internal.ui.navigator.librariesnode=true
+org.eclipse.jdt.ui.formatterprofiles.version=21
+spelling_locale_initialized=true
+typefilter_migrated=true
+useAnnotationsPrefPage=true
+useQuickDiffPrefPage=true

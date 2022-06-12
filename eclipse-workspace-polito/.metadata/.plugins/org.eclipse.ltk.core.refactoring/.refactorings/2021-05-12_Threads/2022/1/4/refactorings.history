@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Counter.java&apos; to &apos;Threads-myOwn/src/(default package)&apos;&#x0A;- Original project: &apos;2021-05-12_Threads&apos;&#x0A;- Destination element: &apos;Threads-myOwn/src/(default package)&apos;&#x0A;- Original element: &apos;it.polito.oop.thread.Counter.java&apos;" description="Copy compilation unit" destination="=Threads-myOwn/src&lt;" element1="/src&lt;it.polito.oop.thread{Counter.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1642422214378" units="1" version="1.0"/>
+</session>

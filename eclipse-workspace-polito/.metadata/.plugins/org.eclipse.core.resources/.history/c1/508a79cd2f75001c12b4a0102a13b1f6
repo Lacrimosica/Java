@@ -1,0 +1,20 @@
+
+import it.polito.oop.*;
+
+public class TestAoo2 {
+	
+	
+	
+	public static void main(String[] args);
+	
+	
+	
+}
+
+
+void setTest() {
+	Set<Coffee> xcaf;
+	
+	Coffee c1 = new Coffee("Java");
+	
+}

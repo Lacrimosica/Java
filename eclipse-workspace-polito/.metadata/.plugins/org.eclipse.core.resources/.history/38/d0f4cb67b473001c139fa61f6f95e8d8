@@ -1,0 +1,10 @@
+
+import it.polito.oop.directors.*;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Staff.getInstance().addDirector("Stanley Kubrick");
+	}
+
+}
